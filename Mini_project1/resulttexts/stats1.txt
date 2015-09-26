@@ -1,0 +1,16 @@
+url_nyt.txt polytical analysis stat 
+ [ Libertarian:    ,   Green   ,   Liberal   ,  Conservative] 
+[0.09719108731742573, 0.366745678801723, 0.3055566546844972, 0.23050657919635403]
+
+url_cbs.txt polytical analysis stat 
+ [ Libertarian:    ,   Green   ,   Liberal   ,  Conservative] 
+[0.12681252805107646, 0.18975279733957617, 0.26730556091214214, 0.4161291136972052]
+
+url_wsj.txt polytical analysis stat 
+ [ Libertarian:    ,   Green   ,   Liberal   ,  Conservative] 
+[0.12853109858724965, 0.3376855177336703, 0.2855244290210035, 0.24825895465807662]
+
+url_fox.txt polytical analysis stat 
+ [ Libertarian:    ,   Green   ,   Liberal   ,  Conservative] 
+[0.09840489545664789, 0.16435796156025695, 0.29142820346689996, 0.4458089395161952]
+

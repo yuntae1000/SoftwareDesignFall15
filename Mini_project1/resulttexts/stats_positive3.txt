@@ -1,0 +1,16 @@
+url_nyt3.txt sentiment analysis stat 
+ [ positivity] 
+[0.37922192162235124]
+
+url_cbs3.txt sentiment analysis stat 
+ [ positivity] 
+[0.26951504065915355]
+
+url_wsj3.txt sentiment analysis stat 
+ [ positivity] 
+[0.11353701920442852]
+
+url_fox3.txt sentiment analysis stat 
+ [ positivity] 
+[0.3688937422488079]
+
