@@ -12,10 +12,12 @@ folder=["url_nytimes.txt", "url_cbsnews.txt", "url_wsj.txt", "url_foxnews.txt"]
 
 #for each files split the string by comma from the array
 for textfiles in folder:
+	# textfile might be a better name than textfiles -- if you're looping through all of
+	# the textfiles in the folder, you're only getting one textfile at a time
 	f= open(textfiles, 'r')
 
 	line=f.readline()
-	url_dummy=line.split(',')
+	url_dummy=line.split(',') # why? what is url_dummy? Could use a comment here
 
 	## get all urls from the saved file
 	i=0
@@ -32,11 +34,13 @@ for textfiles in folder:
 	## do political analysis using indicoio using the API and apped it to the array
 	analysis=[]
 	j=0
+	# You could also use "for item in url_dummy" syntax here, like you did
+	# with "for textfiles in folder"
 	for j in range(len(url_dummy)):
 		analysis.append(indicoio.political(url_dummy[j]))
-		j=j+1
+		j=j+1 # you shouldn't do this -- the for loop already increments j
 
-	
+
 	## get the average of the analysis
 	## add all the results of the urls and divide with the number of urls
 
@@ -46,11 +50,11 @@ for textfiles in folder:
 		sum_stats[1]=sum_stats[1]+analysis[i]["Green"]
 		sum_stats[2]=sum_stats[2]+analysis[i]["Liberal"]
 		sum_stats[3]=sum_stats[3]+analysis[i]["Conservative"]
-		i=i+1
-	print sum_stats	
+		i=i+1 # again, you shouldn't do this
+	print sum_stats
 	aver_stats=[0,0,0,0]
 	for i in range(4):
-	 	aver_stats[i]=sum_stats[i]/float(len(analysis))
+	 	aver_stats[i]=sum_stats[i]/float(len(analysis)) # too much for one line -- break the calculation up and explain it
 
 
 	print "[Libertarian   ,   Green   ,   Liberal   ,  Conservative]"
@@ -64,3 +68,5 @@ for textfiles in folder:
 	f.close()
 
 f_stats.close()
+
+# Again, this all belongs in a function
