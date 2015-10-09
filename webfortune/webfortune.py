@@ -1,12 +1,20 @@
 """
 webfortune.py
 date created: 2014 September 18
+<<<<<<< HEAD
 date updated: 2015 September 7
 author: amonmillner
 
 This script is a quick demonstration of using the Pattern package to grab the text content of a webpage. The program intends to read random fortunes from a website that has a large sample of sentences that one might find in a fortune cookie.
 
 It is highly likely that there are commands and concepts in this example that students in Olin College's Software Design Fall 2015 course have not seen yet. The teaching team will attempt to discuss the concepts introduced as the demonstration happens in class.
+=======
+author: amonmillner
+
+This script is a quick demonstration of using the Pattern package to grab the text content of a webpage.
+
+There are some lines below that introduce some concepts that the Software Design class might be seeing for the first time. There are string manipulations and actions performed on lists that we will discuss during the demonstration.
+>>>>>>> upstream/master
 
 There are countless ways to write a program that would achieve the outcome of grabbing text from a webpage - but we'll start with this less-elegant way of performing the task and collaboratively explore alternative ways to get the results we're looking for - random fortunes.
 
