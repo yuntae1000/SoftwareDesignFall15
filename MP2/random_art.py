@@ -26,6 +26,9 @@ def build_random_function(min_depth, max_depth):
     pick_random_function=[["prod",'a','b'],["sin_pi",'a'],["cos_pi",'b']] #nested list of using functions
     pick_random_input=[['x'],['y']]   #nested list of depth 1 ( x, y)
     
+    # these two if-elif statements contain nearly the same code copy-pasted with a few subtle changes
+    # this is a great example of where a function would be good to reduce copy-pasting and make it more readable
+
     #using recursion put the function in the list
     #lowering the both arguments of the buid_random_function until the min_depth becomes 0
     if min_depth>1 and max_depth>=min_depth:
@@ -70,6 +73,9 @@ def evaluate_random_function(f, x, y):
     output: result of the evaluation(float)
     """
 
+    # I think the assignment asked for you to create some extra functions yourself as well -
+    # this would have led to more varied functions
+
     # if length of the random function is 1, it means the depth is 1
     # other than that it means the depth is larger than 1
     if len(f)>1:
@@ -102,6 +108,9 @@ def remap_interval(val, input_interval_start, input_interval_end, output_interva
         is an affine one (i.e. output = input*c + b).
     
     """
+    # this is cool - I haven't seen something recognize that the remap is just
+    # using slope-intercept form (I hadn't either) but this is cool
+
     # using linear equation remap the value
     # calculating slope, intercept 
     slope=(output_interval_end-output_interval_start)/(input_interval_end-input_interval_start)
@@ -109,7 +118,8 @@ def remap_interval(val, input_interval_start, input_interval_end, output_interva
     remap_val=slope*val+intercept
     return remap_val
     
-
+# these should be encapsulated within a function
+# or at least within an if __name__ == "__main__" statement
 
 pixel_x=800
 pixel_y=450
