@@ -2,11 +2,16 @@
 """
 Random_art.py
 
+<<<<<<< HEAD
 @author: Jake
+=======
+@author: amonmillner, adapted from pruvolo work
+>>>>>>> c5e460a8f58d7545cb68aabd55f4584733f0388b
 """
 
 # you do not have to use these particular modules, but they may help
 from random import randint
+<<<<<<< HEAD
 from PIL import Image
 import math
 
@@ -95,12 +100,28 @@ def evaluate_random_function(f, x, y):
             return result
 
 
+=======
+import Image
+
+def build_random_function(min_depth, max_depth):
+    """ your doc string goes here
+    """
+
+    # your code goes here
+
+def evaluate_random_function(f, x, y):
+    """ your doc string goes here
+    """
+
+    # your code goes here
+>>>>>>> c5e460a8f58d7545cb68aabd55f4584733f0388b
 
 def remap_interval(val, input_interval_start, input_interval_end, output_interval_start, output_interval_end):
     """ Maps the input value that is in the interval [input_interval_start, input_interval_end]
         to the output interval [output_interval_start, output_interval_end].  The mapping
         is an affine one (i.e. output = input*c + b).
     
+<<<<<<< HEAD
     """
     # using linear equation remap the value
     # calculating slope, intercept 
@@ -140,4 +161,12 @@ im.save('example2.png')
 
 
 
+=======
+        TODO: please fill out the rest of this docstring
+    """
+    # your code goes here
+    
 
+>>>>>>> c5e460a8f58d7545cb68aabd55f4584733f0388b
+
+#your additional code and functions go here
