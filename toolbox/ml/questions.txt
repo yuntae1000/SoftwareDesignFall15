@@ -1,0 +1,14 @@
+<Tool box machine learning?
+
+1. What is the general trend of the curve?
+In general the Accuracy on Test set increases as the Percentage of Data used for training increase. 
+
+2. Are there parts of the curve that appear to be noisier than others?  Why?
+In my plot at points with x-values 30%, 40% and 60% showed unexpected y-results and seemed to be noiser. I think this is becuase of small number of trials. 
+
+3. How many trials do you need to get a smooth curve?
+from 40 trials the plot got smooth!
+
+4.Try different values for C (by changing LogisticRegression(C=10**-10)).  What happens?  If you want to know why this happens, see this Wikipedia page as well as the documentation for LogisticRegression in scikit-learn.
+
+As C value increases the plot overfitts and doesn't look like linear plot! This is because as C value increases the regularization decreases which is applying a penalty to increasing the magnitude of parameter value in order to reduce overfitting.
