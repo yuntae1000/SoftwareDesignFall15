@@ -29,6 +29,7 @@ solo = AudioStream(sampling_rate, 1)
 """ these are the piano key numbers for a 3 octave blues scale in A
 	See: http://en.wikipedia.org/wiki/Blues_scale """
 blues_scale = [25, 28, 30, 31, 32, 35, 37, 40, 42, 43, 44, 47, 49, 52, 54, 55, 56, 59, 61]
+
 blues_tonic = [0, 6, 12, 18]
 beats_per_minute = 45				# Let's make a slow blues solo
 #starts in tonic note
@@ -69,3 +70,10 @@ m.add(2.25, 0, solo)    # delay the solo to match up with backing track
 m.add(0, 0, backing_track)
 
 m.getStream(500.0) >> "slow_blues.wav"
+
+beats_per_minute = 45				# Let's make a slow blues solo
+
+add_note(solo, bass, blues_scale[0], 1.0, beats_per_minute, 1.0)
+
+solo >> "blues_solo.wav"
+
